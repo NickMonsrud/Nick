@@ -1,5 +1,6 @@
 package com.viauc.nick.firsthandin;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,9 +13,12 @@ public class LaunchInformation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launch_information);
-
-
+        setContentView(R.layout.content_launch_information);
     }
+    public void MainActivity (View View){
+        Intent startNewActivity = new Intent(this, MainActivity.class);
+        startActivity(startNewActivity);
+    }
+
 
 }

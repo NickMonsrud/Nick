@@ -10,4 +10,6 @@
     <string name="title_activity_launch_information">LaunchInformation</string>
     <string name="title_activity_camera">Camera</string>
 
+    <string name="action_settings">Settings</string>
+
 </resources>

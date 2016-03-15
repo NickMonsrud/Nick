@@ -34,7 +34,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="#ff9933" android:padding="10dp"
-        android:layout_above="@+id/bI"
+        android:layout_below="@+id/about"
+        android:layout_marginTop="10dp"
         android:layout_centerVertical="true"
         android:layout_alignEnd="@+id/about"
         android:layout_alignRight="@+id/about"
@@ -43,7 +44,7 @@
 
 
     <!--Text field-->
-    <EditText
+    <TextView
         android:layout_width="305dp"
         android:layout_height="250dp"
         android:background="#ff9933"
@@ -51,20 +52,12 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:text="This is a field with information."
+        android:padding="10dp"
 
         android:textAlignment="center"
         android:textStyle="italic"
         android:textColor="#FFFFFF"
         />
-    <!--Information Button-->
-    <Button
-        android:id="@+id/bI"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/info"
-        android:onClick="LaunchInformation"
-        />
+
 
 </RelativeLayout>

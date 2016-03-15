@@ -2,10 +2,12 @@ package com.viauc.nick.firsthandin;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,10 +33,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(startNewActivity);
     }
     //Toast Sensor/Map
-    public void Sensor(View view) {
-        Toast.makeText(this, "This is a Sensor", Toast.LENGTH_SHORT).show();}
+
+    public void SensorToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text="This is a Sensor";
+        int duration= Toast.LENGTH_SHORT;
+
+        Toast toast=Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
     //Toast Map
-    public void Map(View view) {
-        Toast.makeText(this, "This is a Map", Toast.LENGTH_SHORT).show();}
+    public void MapToast(View view) {
+        Context context = getApplicationContext();
+        CharSequence text="This is a Map";
+        int duration= Toast.LENGTH_SHORT;
+
+        Toast toast=Toast.makeText(context,text,duration);
+        toast.show();
+    }
 
 }
