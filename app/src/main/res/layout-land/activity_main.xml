@@ -9,21 +9,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bg_land"
+    android:background="@drawable/bg_port"
     tools:context="com.viauc.nick.firsthandin.MainActivity">
 
-    <!--Header-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/alice"
-        android:textSize="35sp"
-        android:textColor="#FF88FF"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        />
+
     <!--Button Camera-->
     <Button
         android:id="@+id/b1"
@@ -31,10 +20,11 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="#ff9933" android:padding="10dp"
-        android:layout_centerVertical="true"
+        android:onClick="Camera"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        />
+
+        android:layout_marginTop="35dp" />
 
     <!-- Button Sensor-->
     <Button
@@ -44,9 +34,7 @@
         android:layout_height="wrap_content"
         android:background="#ff9933" android:padding="10dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
         android:layout_below="@+id/b1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="This is a Sensor"
+        android:onClick="SensorToast"
         />
 
     <!-- Button Map-->
@@ -57,14 +45,12 @@
         android:layout_height="wrap_content"
         android:background="#ff9933" android:padding="10dp"
         android:layout_below="@+id/b2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="This is a Map"
+        android:onClick="MapToast"
         />
 
     <!--Information Button-->
     <Button
-        android:id="@+id/b4"
+        android:id="@+id/bI"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -73,5 +59,6 @@
         android:background="@drawable/info"
         android:onClick="LaunchInformation"
         />
+
 
 </RelativeLayout>

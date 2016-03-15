@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bg_tablet_port"
+    android:background="@drawable/bg_port"
     tools:context="com.viauc.nick.firsthandin.MainActivity">
 
     <!--Header-->
@@ -33,6 +33,7 @@
         android:background="#ff9933" android:padding="10dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:onClick="Camera"
         />
 
     <!-- Button Sensor-->
@@ -44,7 +45,7 @@
         android:background="#ff9933" android:padding="10dp" android:layout_margin="10dp"
         android:layout_below="@+id/b1"
         android:layout_centerHorizontal="true"
-        android:onClick="This is a Sensor"
+        android:onClick="SensorToast"
         />
 
     <!-- Button Map-->
@@ -56,12 +57,12 @@
         android:background="#ff9933" android:padding="10dp"
         android:layout_below="@+id/b2"
         android:layout_centerHorizontal="true"
-        android:onClick="This is a Map"
+        android:onClick="MapToast"
         />
 
     <!--Information Button-->
     <Button
-        android:id="@+id/b4"
+        android:id="@+id/bI"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -70,5 +71,6 @@
         android:background="@drawable/info"
         android:onClick="LaunchInformation"
         />
+
 
 </RelativeLayout>

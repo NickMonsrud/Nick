@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         Intent startNewActivity = new Intent(this, Camera.class);
         startActivity(startNewActivity);
     }
+//    public void Sensor(View View) {
+//        Intent startNewActivity = new Intent(this, Sensor.class);
+//        startActivity(startNewActivity);
+//    }
     //Toast Sensor/Map
 
     public void SensorToast(View view) {

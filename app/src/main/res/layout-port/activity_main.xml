@@ -17,12 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/alice"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textColor="#FF88FF"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
         />
     <!--Button Camera-->
     <Button
@@ -35,7 +34,6 @@
         android:layout_centerHorizontal="true"
         android:onClick="Camera"
         />
-
     <!-- Button Sensor-->
     <Button
         android:id="@+id/b2"
@@ -44,9 +42,8 @@
         android:layout_height="wrap_content"
         android:background="#ff9933" android:padding="10dp" android:layout_margin="10dp"
         android:layout_below="@+id/b1"
-        android:layout_centerHorizontal="true"
         android:onClick="SensorToast"
-        />
+        android:layout_centerInParent="true" />
 
     <!-- Button Map-->
     <Button
@@ -56,9 +53,8 @@
         android:layout_height="wrap_content"
         android:background="#ff9933" android:padding="10dp"
         android:layout_below="@+id/b2"
-        android:layout_centerHorizontal="true"
         android:onClick="MapToast"
-        />
+        android:layout_centerInParent="true" />
 
     <!--Information Button-->
     <Button
