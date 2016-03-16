@@ -24,40 +24,40 @@ tools:context="com.viauc.nick.firsthandin.MainActivity">
     android:layout_centerHorizontal="true"
     android:layout_marginTop="25dp"
     />
-<!--Button Camera-->
+<!--Button shock-->
 <Button
-    android:id="@+id/b1"
+    android:id=""
     android:text="@string/camera"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:background="#ff9933" android:padding="10dp"
     android:layout_centerVertical="true"
     android:layout_centerHorizontal="true"
-    android:onClick="Camera"
+
     />
 
-<!-- Button Sensor-->
+<!-- Button spirit level-->
 <Button
-    android:id="@+id/b2"
+    android:id=""
     android:text="@string/sensor"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:background="#ff9933" android:padding="10dp" android:layout_margin="10dp"
     android:layout_below="@+id/b1"
     android:layout_centerHorizontal="true"
-    android:onClick="SensorToast"
+
     />
 
-<!-- Button Map-->
+<!-- Button Compass-->
 <Button
-    android:id="@+id/b3"
+    android:id=""
     android:text="@string/map"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:background="#ff9933" android:padding="10dp"
     android:layout_below="@+id/b2"
     android:layout_centerHorizontal="true"
-    android:onClick="MapToast"
+
     />
 
 <!--Information Button-->
